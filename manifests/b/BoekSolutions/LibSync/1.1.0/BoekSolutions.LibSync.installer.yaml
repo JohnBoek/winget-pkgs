@@ -14,7 +14,6 @@ Installers:
     AppsAndFeaturesEntries:
       - DisplayName: LibSync version 1.1.0
         Publisher: BoekSolutions
-        DisplayVersion: 1.1.0
         ProductCode: "{6219A392-16B3-415A-AE12-A33BB0465824}_is1"
 ManifestType: installer
 ManifestVersion: 1.12.0
