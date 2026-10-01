@@ -14,7 +14,6 @@ Installers:
     AppsAndFeaturesEntries:
       - DisplayName: Sheet Set Editor version 1.2.0
         Publisher: BoekSolutions
-        DisplayVersion: 1.2.0
         ProductCode: "{8D3C9FE1-824B-47B7-A3F4-EA2D8F7C6ED4}_is1"
 ManifestType: installer
 ManifestVersion: 1.12.0
