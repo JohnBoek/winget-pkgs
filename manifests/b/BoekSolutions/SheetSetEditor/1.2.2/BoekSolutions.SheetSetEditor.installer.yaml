@@ -1,18 +1,19 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: BoekSolutions.SheetSetEditor
-PackageVersion: 1.2.0
+PackageVersion: 1.2.2
 InstallerType: inno
-Scope: user
+Scope: machine
+ElevationRequirement: elevationRequired
 UpgradeBehavior: install
-ReleaseDate: 2026-09-15
+ReleaseDate: 2026-10-06
 Installers:
   - Architecture: x64
-    InstallerUrl: https://github.com/JohnBoek/SheetSetEditor-releases/releases/download/v1.2.0/SheetSetEditor-Setup.exe
-    InstallerSha256: AC66E850D3AF49D9E8DA914E7256709A80C54817BBA01F4191B19E0EB5CDFA7B
+    InstallerUrl: https://github.com/JohnBoek/boeksolutions.sheetseteditor-releases/releases/download/v1.2.2/SheetSetEditor-Setup.exe
+    InstallerSha256: B9947907562E03A84731357FFADF7C7EC1AAB7D868DC49482B17933B03851BA7
     ProductCode: "{8D3C9FE1-824B-47B7-A3F4-EA2D8F7C6ED4}_is1"
     AppsAndFeaturesEntries:
-      - DisplayName: Sheet Set Editor version 1.2.0
+      - DisplayName: BoekSolutions Sheet Set Batch Editor version 1.2.2
         Publisher: BoekSolutions
         ProductCode: "{8D3C9FE1-824B-47B7-A3F4-EA2D8F7C6ED4}_is1"
 ManifestType: installer

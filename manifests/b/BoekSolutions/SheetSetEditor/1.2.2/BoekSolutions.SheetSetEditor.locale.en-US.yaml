@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: BoekSolutions.SheetSetEditor
-PackageVersion: 1.2.0
+PackageVersion: 1.2.2
 PackageLocale: en-US
 Publisher: BoekSolutions
 PublisherUrl: https://boeksolutions.nl/
@@ -26,10 +26,13 @@ Tags:
   - windows
 PurchaseUrl: https://boeksolutions.nl/checkout/sheet-set-editor
 ReleaseNotes: |-
-  - Added one-time licenses for one active computer, with no annual renewal or restriction to a specific AutoCAD version.
-  - Improved license activation and transfer through the personal link in the purchase email. A valid permanent license also works offline.
-  - Existing registered licenses are converted automatically while keeping their original expiry date.
-  - License signatures are now checked without storing a license-creation secret in the app.
-ReleaseNotesUrl: https://github.com/JohnBoek/SheetSetEditor-releases/releases/tag/v1.2.0
+  - Improved: installation and uninstallation now consistently require administrator rights and install for all Windows users.
+  - Improved: uninstalling removes installed application and AutoCAD plug-in files while preserving additional personal files, app settings, and licence state.
+  - Improved: older per-user installations and installations with legacy folder cleanup require a one-time uninstall before upgrading. The installer explains how to protect personal files before removing the old version.
+  - Improved: English is the default for new installations, and dialogs, property editors, and the import wizard follow the selected interface language.
+  - Added: the AutoCAD 2027 ribbon now includes a BoekSolutions button to start the editor with `SSMBE`.
+  - Fixed: edits to empty custom properties are now saved correctly even when AutoCAD omitted their value from the sheet set.
+  - Fixed: relative drawing and sheet-storage paths are now resolved from the original sheet-set folder when opening a `.dst` file.
+ReleaseNotesUrl: https://github.com/JohnBoek/boeksolutions.sheetseteditor-releases/releases/tag/v1.2.2
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
