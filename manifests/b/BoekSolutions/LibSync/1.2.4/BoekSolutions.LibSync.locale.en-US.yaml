@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: BoekSolutions.LibSync
-PackageVersion: 1.1.0
+PackageVersion: 1.2.4
 PackageLocale: en-US
 Publisher: BoekSolutions
 PublisherUrl: https://boeksolutions.nl/
@@ -27,10 +27,11 @@ Tags:
   - windows
 PurchaseUrl: https://boeksolutions.nl/checkout/libsync
 ReleaseNotes: |-
-  - Added one-time licenses for one active computer, with no annual renewal or restriction to a specific AutoCAD version.
-  - Improved license activation and transfer through the personal link in the purchase email. A valid permanent license also works offline.
-  - Existing registered licenses are converted automatically while keeping their original expiry date.
-  - License signatures are now checked without storing a license-creation secret in the app.
-ReleaseNotesUrl: https://github.com/JohnBoek/LibSync-releases/releases/tag/v1.1.0
+  - Installs for all Windows users in Program Files with elevated setup and uninstall. Remove legacy per-user copies first; external profiles, preferences, backups and licensing state are retained.
+  - Language changes refresh license and update text; Cancel restores the previous language and theme.
+  - Localized preview actions, validation and activity messages, confirmation buttons and support-email drafts.
+  - Corrected update-check status and natural-language translations; fictional languages are explicitly experimental.
+  - New installations select the desktop shortcut by default.
+ReleaseNotesUrl: https://github.com/JohnBoek/boeksolutions.libsync-releases/releases/tag/v1.2.4
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
